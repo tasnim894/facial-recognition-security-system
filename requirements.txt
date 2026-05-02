@@ -1,0 +1,11 @@
+flask
+werkzeug
+deepface
+numpy
+opencv-python-headless
+psycopg2-binary
+cloudinary
+tf-keras
+gunicorn
+requests
+Pillow
