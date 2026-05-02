@@ -1,0 +1,30 @@
+# Variables d'environnement — NE JAMAIS COMMIT
+.env
+*.env
+ 
+# Photos employés — données privées
+database/
+*.jpg
+*.jpeg
+*.png
+ 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+env/
+ 
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+ 
+# OS
+.DS_Store
+Thumbs.db
+ 
+# Logs
+*.log
+ 
