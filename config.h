@@ -1,16 +1,30 @@
 #ifndef __CONFIG_H__
 #define __CONFIG_H__
-
-#define WIFI_SSID        "GALPHARMA"
-#define WIFI_PASSWORD    "galpharmasoftconnect@2023"
-
+ 
+// ─────────────────────────────────────────
+//  WiFi — à modifier selon ton réseau
+// ─────────────────────────────────────────
+#define WIFI_SSID        "YOUR_WIFI_SSID"
+#define WIFI_PASSWORD    "YOUR_WIFI_PASSWORD"
+ 
 #define WIFI_AP_SSID     "T-SIMCAM-"
 #define WIFI_AP_PASSWORD "12345678"
-
-#define SERVER_URL "https://tasnim986-controle-acces.hf.space/reconnaissance"
+ 
+// ─────────────────────────────────────────
+//  Serveur Flask — URL de ton déploiement
+// ─────────────────────────────────────────
+#define SERVER_URL "https://YOUR_SERVER_URL/reconnaissance"
+ 
+// ─────────────────────────────────────────
+//  Nom de la porte surveillée
+// ─────────────────────────────────────────
+#define PORTE_NOM "Porte_Principale"
+ 
 #define USE_SIM_CAM_V1_3
-
-// PIN
+ 
+// ─────────────────────────────────────────
+//  PIN mapping — T-SIM-CAM ESP32-S3
+// ─────────────────────────────────────────
 #define SD_MISO_PIN      40
 #define SD_MOSI_PIN      38
 #define SD_SCLK_PIN      39
@@ -43,7 +57,7 @@
 #define SERIAL_RX_PIN    44
 #define SERIAL_TX_PIN    43
 #define BAT_VOLT_PIN     -1
-
+ 
 #if defined(USE_SIM_CAM_V1_3)
   #define CAM_IR_PIN    18
   #undef  CAM_RESET_PIN
@@ -54,8 +68,7 @@
   #define CAM_RESET_PIN 18
   #warning "Currently using V1.2 Pinmap"
 #endif
-
-// ← BOUTON 2 : IO46 (seule pin libre restante)
+ 
 #define BUTTON_SEND_PIN  46
-
+ 
 #endif
